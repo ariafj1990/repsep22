@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>90s</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #02141e;
+            color: rgb(68, 91, 153);
+            background-image: url("imageheader.jpg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(37, 56, 114);
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(80, 147, 202);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(149, 143, 232);
+            color: rgb(68, 81, 97);
+        }
+
+        .navbar a.active {
+            background-color: rgb(146, 190, 223);
+            color: rgb(67, 127, 152);
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #a6cfe4;
+            padding: 20px;
+        }
+
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: rgb(182, 224, 243);
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: rgb(156, 204, 233);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(137, 196, 220);
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>ARIA</h1>
+        <p style="font-weight: bold">Front End</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" class="right">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About</h2>
+            <h5>Photo:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>oops</p>
+            <h3>oops</h3>
+            <p>some text</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE</h2>
+            <h5>Title description</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>oops</p>
+            <p>some text </p>
+            <br>
+            <h2>TITLE</h2>
+            <h5>Title description</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>oops</p>                                                                                                                                                                                                                                                                                                                                                 
+            <p>Some text </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
